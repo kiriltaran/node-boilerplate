@@ -3,11 +3,17 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.json({ method: 'GET', route: 'user' });
+  res.status(200).json({
+    method: 'GET',
+    route: 'user',
+  });
 });
 
 router.post('/', (req, res) => {
-  res.json({ method: 'POST', route: 'user' });
+  res.status(200).json({
+    method: 'POST',
+    route: 'user',
+  });
 });
 
 module.exports = router;
