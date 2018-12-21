@@ -1,8 +1,6 @@
 const express = require('express');
 const logger = require('morgan');
-const chalk = require('chalk');
 
-const { port, env } = require('./config');
 const { indexRouter, userRouter } = require('./routers');
 
 const app = express();
@@ -29,6 +27,4 @@ app.use((error, req, res, next) => {
   });
 });
 
-app.listen(port, () => {
-  global.console.log(chalk.green(`Server running on port ${port} in ${env} environment`));
-});
+module.exports = app;
