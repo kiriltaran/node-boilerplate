@@ -1,7 +1,7 @@
 {
-  "name": "node-boilerplate",
+  "name": "node-skeleton",
   "version": "1.0.0",
-  "description": "A boilerplate for Node.js projects",
+  "description": "A skeleton for Node.js projects",
   "main": "app.js",
   "engines": {
     "node": ">=11.0.0"
